@@ -6,15 +6,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Kythera'web site</title>
     <link rel="stylesheet"  href="./CSS/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
 
     <!-- Header Menu -->
-    <header>
-        <a href="#" class="logo"><img src="./img/LOGO KYHTERA.png"></a>
+    <header class="sticky">
+        <a href="#" class="logo"><img src="./img/Kythera_Logo_kırmızı_png.png"></a>
         <ul class="navbar">
             <li><a href="#home">Home</a> </li>
-            <li><a href="#about">About</a> </li>
+            <li><a href="#about">About Me</a> </li>
             <li><a href="#services">Services</a> </li>
             <li><a href="#portfolio">Portfolio</a> </li>
             <li><a href="#contact">Contact</a> </li>
@@ -26,9 +29,9 @@
     <section id="home" class="home">
         <div class="home-text">
             <h4>Hello</h4>
-            <h1>I'm Kythera</h1>
+            <h1>I'm Kythera<br/> U<span>SLUM</span></h1>
             <h3>BlockChain Enthusiast and Music Lover</h3>
-            <a href="Hire Me">Hire Me</a>
+            <a href="Hire Me" class="btn">Hire Me</a>
         </div>
     </section>
 
@@ -36,20 +39,21 @@
     <section id="about" class="about">
 
     <div class=about-img class="about">
-        <img src=""/>
+        <img src="./img/ahmet2.jpeg" width="433" height="560"/>
     </div>
     <div class="about-text">
         <h2> About Me</h2>
         <h4> Hi i am guitar player and Blockchain developer</h4>
         <p>1982 de Çanakkalede doğmuş olmama rağmen önce Sinop gerze'de bebekliğini geçirmiş ardından ani bir kararla İzmir'e ilkokulu okumak üzere geçmiş, ardından kendine göre Şark görevini ifa için Ankaraya gitmiş burada ortaokul lise kolej akademi her ne okunacak şey varsa okumuş ve hayatını kazanmak amacı ilen İstanbul' a onu yenmek için giden ancak sadece On sene dayanabilen, "şark görevi Ankarada'mı olur lan" aşağılamalarına dayanamayıp kendisini Şırnak'ın çetin yollarına atmış bir Başkomiserim sadece..... Bilişim suçlarına, Müziğe, Asya kültürüne, Teknolojiye zaafım var kalkıp ta teknolojik bi alet hediye edeyim demeyin. Yok yok walla gerek yok....</p>
+        <div class="about-features">
+            <h5>1.Ploblem Solving</h5>
+            <h5>2.Guitar Player</h5>
+            <h5>3.Creative Ideas</h5>
+            <h5>Ultimate Course</h5>
+            <a href="contactme">Contact Me </a>
+        </div>
     </div>
-    <div class="about-features">
-        <h5>1.Ploblem Solving</h5>
-        <h5>2.Guitar Player</h5>
-        <h5>3.Creative Ideas</h5>
-        <h5>Ultimate Course</h5>
-        <a href="contactme">Contact Me </a>
-    </div>
+    
 
     </section>
 
@@ -62,17 +66,17 @@
         </div>
         <div class="services-content">
             <div class="box">
-                <img src="" alt="">
+                <img src="./img/serv1.png" alt="">
                 <h3>Mobile app Design</h3>
                 <p>burada yaptığım şeylerin detaytlarını yazacağım</p>
             </div>
             <div class="box">
-                <img src="" alt="">
+                <img src="./img/serv2.png" alt="">
                 <h3>Mobile app Design</h3>
                 <p>burada yaptığım şeylerin detaytlarını yazacağım</p>
             </div>
             <div class="box">
-                <img src="" alt="">
+                <img src="./img/serv3.png" alt="">
                 <h3>Mobile app Design</h3>
                 <p>burada yaptığım şeylerin detaytlarını yazacağım</p>
             </div>
@@ -82,105 +86,74 @@
     <!--Potofolio-->
     <section id="portfolio" class="portfolio">
         <div class="main-text">
-            <h2>My Potofolio</h2>
-            <h4>Some of My works</h4>
-        </div> 
-        
-        <div class="portfolio-content">
-            <div class="portfolio-box">
-                <img src="" alt="">
-                <h6>Development</h6>
-            <div class="portfolio-box-icon">
-                <!--ICON>-->
-            </div>    
-                <h3>Mobile App landing design</h3>
-            </div>
-            
+            <h2>My Portfolio</h2>
+            <h4>Some of My Works</h4>
         </div>
 
-        <div class="main-text">
-            <h2>My Potofolio</h2>
-            <h4>Some of My works</h4>
-        </div> 
-        
         <div class="portfolio-content">
             <div class="portfolio-box">
-                <img src="" alt="">
-                <h6>Development</h6>
-            <div class="portfolio-box-icon">
-                <!--ICON>-->
-            </div>    
-                <h3>Mobile App landing design</h3>
+                <img src=""/>
+                <div class="portfolio-box-text">
+                    <h6>Development</h6>
+                </div>
+                <div class="portfolio-box-icon">
+                   <!--Icon-->
+                </div>
+                <h3>Mobile app landing design & Services</h3>
             </div>
-            
-        </div>
-        <div class="main-text">
-            <h2>My Potofolio</h2>
-            <h4>Some of My works</h4>
-        </div> 
-        
-        <div class="portfolio-content">
             <div class="portfolio-box">
-                <img src="" alt="">
-                <h6>Development</h6>
-            <div class="portfolio-box-icon">
-                <!--ICON>-->
-            </div>    
-                <h3>Mobile App landing design</h3>
+                <img src=""/>
+                <div class="portfolio-box-text">
+                    <h6>Development</h6>
+                </div>
+                <div class="portfolio-box-icon">
+                   <!--Icon-->
+                </div>
+                <h3>Mobile app landing design & Services</h3>
             </div>
-            
-        </div>
-        <div class="main-text">
-            <h2>My Potofolio</h2>
-            <h4>Some of My works</h4>
-        </div> 
-        
-        <div class="portfolio-content">
             <div class="portfolio-box">
-                <img src="" alt="">
-                <h6>Development</h6>
-            <div class="portfolio-box-icon">
-                <!--ICON>-->
-            </div>    
-                <h3>Mobile App landing design</h3>
+                <img src=""/>
+                <div class="portfolio-box-text">
+                    <h6>Development</h6>
+                </div>
+                <div class="portfolio-box-icon">
+                   <!--Icon-->
+                </div>
+                <h3>Mobile app landing design & Services</h3>
             </div>
-            
-        </div>
-        <div class="main-text">
-            <h2>My Potofolio</h2>
-            <h4>Some of My works</h4>
-        </div> 
-        
-        <div class="portfolio-content">
             <div class="portfolio-box">
-                <img src="" alt="">
-                <h6>Development</h6>
-            <div class="portfolio-box-icon">
-                <!--ICON>-->
-            </div>    
-                <h3>Mobile App landing design</h3>
+                <img src=""/>
+                <div class="portfolio-box-text">
+                    <h6>Development</h6>
+                </div>
+                <div class="portfolio-box-icon">
+                   <!--Icon-->
+                </div>
+                <h3>Mobile app landing design & Services</h3>
             </div>
-            
-        </div>
-        <div class="main-text">
-            <h2>My Potofolio</h2>
-            <h4>Some of My works</h4>
-        </div> 
-        
-        <div class="portfolio-content">
             <div class="portfolio-box">
-                <img src="" alt="">
-                <h6>Development</h6>
-            <div class="portfolio-box-icon">
-                <!--ICON>-->
-            </div>    
-                <h3>Mobile App landing design</h3>
+                <img src=""/>
+                <div class="portfolio-box-text">
+                    <h6>Development</h6>
+                </div>
+                <div class="portfolio-box-icon">
+                   <!--Icon-->
+                </div>
+                <h3>Mobile app landing design & Services</h3>
             </div>
-            
+            <div class="portfolio-box">
+                <img src=""/>
+                <div class="portfolio-box-text">
+                    <h6>Development</h6>
+                </div>
+                <div class="portfolio-box-icon">
+                   <!--Icon-->
+                </div>
+                <h3>Mobile app landing design & Services</h3>
+            </div>
         </div>
-
-
     </section>
+
 
     <!--CONTACT ME-->
     <section>

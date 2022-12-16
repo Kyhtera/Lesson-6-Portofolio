@@ -2,7 +2,7 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    font-family:'Times New Roman', Times, serif;
+    font-family:'Quicksand', Times, serif;
     list-style: none;
     text-decoration: none;
 
@@ -16,7 +16,9 @@
     --h2-font:3rem;
     --h3-font:2rem;
     --h4-font:1.5rem;
-
+    --p-font:1rem;
+    --a-font:2rem;
+    --h5-font:1.2rem;
     
 
 }
@@ -37,11 +39,213 @@ header{
     display: flex;
     align-items: center;
     justify-content:space-between;
-
+    border-radius: 20px;
+    opacity: 50%;
+    padding: 25px 15%;
+    
 
 }
 
 .logo img{
-    width:150px;
-    height:auto
+    width:100px;
+    height:auto;
+    
 }
+
+.navbar{
+    display: flex;
+}
+
+.navbar a{
+    color: rgb(157, 151, 151);
+    font-size: var(--p-font);
+    padding: 10px 25px;
+    border-radius: 0.7rem;
+    transition: all .40s ease-out;
+}
+
+.navbar a:hover{
+    background: var(--primary-color);
+    color:var(--text-color)
+    
+}
+
+section{
+    padding: 200px 15% 90px;
+}
+
+.home{
+    width:100%;
+    height:80vh;
+    max-width: 100%; /*aklınızda bulundurun*/
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    background-image: url(../img/play-guitar.jpeg);
+    background-size:cover;
+    background-position: center;
+    }
+
+    .home-text h4{
+        color: var(--primary-color);
+        font-size: var(var(--h4-font));
+        font-weight: 600;
+
+    }
+
+    .home-text h1{
+        font-size: var(--h1-font);
+        font-weight: 600;
+        margin:20px 0;
+        line-height:1.2;
+        letter-spacing: 2px;
+
+    }
+
+    .home-text span{
+        color:var(--primary-color)
+    }
+
+    .home-text h3{
+        font-size: var(--h3-font);
+        font-weight: 600;
+        margin-bottom: 2rem;
+    }
+
+    .btn{
+        font-size:var(--a-font);
+        font-weight: 600;
+        background: var(--primary-color);
+        color:var(--text-color);
+        padding:15px;
+        border-radius:0.8rem;
+
+
+    }
+
+    .btn:hover{
+        opacity:0.5;
+        border:1px solid var(--primary-color);
+
+    }
+
+    header.sticky{
+        background: var(--bg-color);
+        padding: 10px 15%;
+        border: 1px solid var(--bg-color);
+    
+    }
+
+    .about{
+        display:grid;
+        grid-template-columns: repeat(2, 1fr);
+        /* 2 sutün 1 fr %50 , %50 gibi kullanılıyor------3 sutün 1fr, 33.33 %33.33 
+        2fr 4fr gibi bir tanımlama sunduydsak bunun bize çıktısı 20% /2 birim)  40% 4 birim */
+        align-items: center;
+        gap:2rem;
+        
+    }
+
+    .about-text h4{
+        color: var(--text-color);
+        font-weight: 600;
+        font-size: var(--h4-font);
+    }
+
+    .about-text h4{
+        font-size: var(--h4-font);
+
+    }
+
+    .about-text p{
+        color: var(--text-color);
+        font-size: var(--p-font);line-height: 25px;
+
+    }
+
+    .about-features{
+        display:grid;
+        grid-template-columns: repeat(2, 1fr);
+        align-items: center;
+        gap:1rem;
+        margin-bottom: 2rem;
+        margin-top:2rem;
+
+    }
+
+    .about-features h5{
+        font-size: var(--h5-font);
+        font-weight: 600;
+
+    }
+
+    .about-img{
+        width:100%;
+        height: auto;
+        max-width: 450px;
+    
+
+    }
+
+    .main-text{
+        text-align: center;
+    }
+    .main-text h2{
+        font-size:var(--h2-font);
+        font-weight:600;
+        
+    }
+
+    .main-text h4{
+        font-size:var(--h4-font);
+        font-weight: 600;
+        color:var(--primary-color);
+        margin-bottom:10px;
+    }
+
+    .services-content{
+        display: grid;
+        grid-template-columns: repeat(3, 1FR);
+        align-items: center;
+        text-align: center;
+        gap: 1.5rem;
+
+
+        /*display: grid;
+        grid-template-columns: repeat(3, 1FR);
+        justify-content:space-between ;
+
+        bunlar hepsi beraber kullanılan bir kalıp gibi. 3 silahşörler*/
+    }
+
+    .box{
+        background: #4e4f52;
+        padding:40px;
+        border-top:5px solid transparent;
+        border-radius: 0.8rem;
+        
+    }
+
+    .box h3{
+        margin-top:0.9rem;
+        color: var(--text-color);
+        font-size: var(--h3-font);
+    }
+
+    .box p{
+        color:var(--secondary-color);
+        margin-top:20px;
+        line: height 1.8em;
+    }
+    .box:hover{
+
+        border-top: 5px solid var(--primary-color);
+        transition: all 0.40s ease-in;
+        
+
+    }
+
+    .box:hover h3{
+        color:var(--primary-color);
+    }
