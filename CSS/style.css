@@ -1,251 +1,365 @@
-*{
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-    font-family:'Quicksand', Times, serif;
-    list-style: none;
-    text-decoration: none;
-
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Quicksand", Times, serif;
+  list-style: none;
+  text-decoration: none;
 }
-:root{
-    --bg-color: #020312;
-    --text-color: rgb(255, 255, 255);
-    --primary-color: rgb(192, 46, 46);
-    --secondary-color:grey;
-    --h1-font:5rem;
-    --h2-font:3rem;
-    --h3-font:2rem;
-    --h4-font:1.5rem;
-    --p-font:1rem;
-    --a-font:2rem;
-    --h5-font:1.2rem;
-    
-
-}
-
-body{
-    background-color: var(--bg-color) ;
-    color:var(--text-color);
-
+:root {
+  --bg-color: #020312;
+  --text-color: rgb(255, 255, 255);
+  --primary-color: rgb(192, 46, 46);
+  --secondary-color: grey;
+  --h1-font: 5rem;
+  --h2-font: 3rem;
+  --h3-font: 2.5rem;
+  --h4-font: 1.5rem;
+  --p-font: 0.8rem;
+  --a-font: 2rem;
+  --h5-font: 1.2rem;
+  --h6-font: 1rem;
+  --box-color: #12141c;
 }
 
-
-header{
-    position: fixed;
-    right:0;
-    top: 0;
-    width:100%;
-    z-index: 1000;
-    display: flex;
-    align-items: center;
-    justify-content:space-between;
-    border-radius: 20px;
-    opacity: 50%;
-    padding: 25px 15%;
-    
-
+body {
+  background-color: var(--bg-color);
+  color: var(--text-color);
 }
 
-.logo img{
-    width:100px;
-    height:auto;
-    
+header {
+  position: fixed;
+  right: 0;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-radius: 20px;
+  opacity: 50%;
+  padding: 25px 15%;
 }
 
-.navbar{
-    display: flex;
+.logo img {
+  width: 100px;
+  height: auto;
 }
 
-.navbar a{
-    color: rgb(157, 151, 151);
-    font-size: var(--p-font);
-    padding: 10px 25px;
-    border-radius: 0.7rem;
-    transition: all .40s ease-out;
+.navbar {
+  display: flex;
 }
 
-.navbar a:hover{
-    background: var(--primary-color);
-    color:var(--text-color)
-    
+.navbar a {
+  color: rgb(157, 151, 151);
+  font-size: var(--p-font);
+  padding: 10px 25px;
+  border-radius: 0.7rem;
+  transition: all 0.4s ease-out;
 }
 
-section{
-    padding: 200px 15% 90px;
+.navbar a:hover {
+  background: var(--primary-color);
+  color: var(--text-color);
 }
 
-.home{
-    width:100%;
-    height:80vh;
-    max-width: 100%; /*aklınızda bulundurun*/
-    position: relative;
-    display: flex;
-    align-items: center;
-    justify-content: flex-start;
-    background-image: url(../img/play-guitar.jpeg);
-    background-size:cover;
-    background-position: center;
-    }
+section {
+  padding: 200px 15% 90px;
+}
 
-    .home-text h4{
-        color: var(--primary-color);
-        font-size: var(var(--h4-font));
-        font-weight: 600;
+.home {
+  width: 100%;
+  height: 80vh;
+  max-width: 100%; /*aklınızda bulundurun*/
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  background-image: url(../img/play-guitar.jpeg);
+  background-size: cover;
+  background-position: center;
+}
 
-    }
+.home-text h4 {
+  color: var(--primary-color);
+  font-size: var(var(--h4-font));
+  font-weight: 600;
+}
 
-    .home-text h1{
-        font-size: var(--h1-font);
-        font-weight: 600;
-        margin:20px 0;
-        line-height:1.2;
-        letter-spacing: 2px;
+.home-text h1 {
+  font-size: var(--h1-font);
+  font-weight: 600;
+  margin: 20px 0;
+  line-height: 1.2;
+  letter-spacing: 2px;
+}
 
-    }
+.home-text span {
+  color: var(--primary-color);
+}
 
-    .home-text span{
-        color:var(--primary-color)
-    }
+.home-text h3 {
+  font-size: var(--h3-font);
+  font-weight: 600;
+  margin-bottom: 2rem;
+}
 
-    .home-text h3{
-        font-size: var(--h3-font);
-        font-weight: 600;
-        margin-bottom: 2rem;
-    }
+.btn {
+  font-size: var(--a-font);
+  font-weight: 600;
+  background: var(--primary-color);
+  color: var(--text-color);
+  padding: 15px;
+  border-radius: 0.8rem;
+}
 
-    .btn{
-        font-size:var(--a-font);
-        font-weight: 600;
-        background: var(--primary-color);
-        color:var(--text-color);
-        padding:15px;
-        border-radius:0.8rem;
+.btn:hover {
+  opacity: 0.5;
+  border: 1px solid var(--primary-color);
+}
 
+header.sticky {
+  background: var(--bg-color);
+  padding: 10px 15%;
+  border: 1px solid var(--bg-color);
+}
 
-    }
-
-    .btn:hover{
-        opacity:0.5;
-        border:1px solid var(--primary-color);
-
-    }
-
-    header.sticky{
-        background: var(--bg-color);
-        padding: 10px 15%;
-        border: 1px solid var(--bg-color);
-    
-    }
-
-    .about{
-        display:grid;
-        grid-template-columns: repeat(2, 1fr);
-        /* 2 sutün 1 fr %50 , %50 gibi kullanılıyor------3 sutün 1fr, 33.33 %33.33 
+.about {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  /* 2 sutün 1 fr %50 , %50 gibi kullanılıyor------3 sutün 1fr, 33.33 %33.33 
         2fr 4fr gibi bir tanımlama sunduydsak bunun bize çıktısı 20% /2 birim)  40% 4 birim */
-        align-items: center;
-        gap:2rem;
-        
-    }
+  align-items: center;
+  gap: 2rem;
+}
 
-    .about-text h4{
-        color: var(--text-color);
-        font-weight: 600;
-        font-size: var(--h4-font);
-    }
+.about-text h4 {
+  color: var(--text-color);
+  font-weight: 600;
+  font-size: var(--h4-font);
+}
 
-    .about-text h4{
-        font-size: var(--h4-font);
+.about-text h4 {
+  font-size: var(--h4-font);
+}
 
-    }
+.about-text p {
+  color: var(--text-color);
+  font-size: var(--p-font);
+  line-height: 25px;
+}
 
-    .about-text p{
-        color: var(--text-color);
-        font-size: var(--p-font);line-height: 25px;
+.about-features {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 2rem;
+  margin-top: 2rem;
+}
 
-    }
+.about-features h5 {
+  font-size: var(--h5-font);
+  font-weight: 600;
+}
 
-    .about-features{
-        display:grid;
-        grid-template-columns: repeat(2, 1fr);
-        align-items: center;
-        gap:1rem;
-        margin-bottom: 2rem;
-        margin-top:2rem;
+.about-img {
+  width: 100%;
+  height: auto;
+  max-width: 450px;
+}
 
-    }
+.main-text {
+  text-align: center;
+}
+.main-text h2 {
+  font-size: var(--h2-font);
+  font-weight: 600;
+}
 
-    .about-features h5{
-        font-size: var(--h5-font);
-        font-weight: 600;
+.main-text h4 {
+  font-size: var(--h4-font);
+  font-weight: 600;
+  color: var(--primary-color);
+  margin-bottom: 10px;
+}
 
-    }
+.services-content {
+  display: grid;
+  grid-template-columns: repeat(3, 1FR);
+  align-items: center;
+  text-align: center;
+  gap: 1.5rem;
 
-    .about-img{
-        width:100%;
-        height: auto;
-        max-width: 450px;
-    
-
-    }
-
-    .main-text{
-        text-align: center;
-    }
-    .main-text h2{
-        font-size:var(--h2-font);
-        font-weight:600;
-        
-    }
-
-    .main-text h4{
-        font-size:var(--h4-font);
-        font-weight: 600;
-        color:var(--primary-color);
-        margin-bottom:10px;
-    }
-
-    .services-content{
-        display: grid;
-        grid-template-columns: repeat(3, 1FR);
-        align-items: center;
-        text-align: center;
-        gap: 1.5rem;
-
-
-        /*display: grid;
+  /*display: grid;
         grid-template-columns: repeat(3, 1FR);
         justify-content:space-between ;
 
         bunlar hepsi beraber kullanılan bir kalıp gibi. 3 silahşörler*/
-    }
+}
 
-    .box{
-        background: #4e4f52;
-        padding:40px;
-        border-top:5px solid transparent;
-        border-radius: 0.8rem;
-        
-    }
+.box {
+  background: #4e4f52;
+  padding: 40px;
+  border-top: 5px solid transparent;
+  border-radius: 0.8rem;
+}
 
-    .box h3{
-        margin-top:0.9rem;
-        color: var(--text-color);
-        font-size: var(--h3-font);
-    }
+.box h3 {
+  margin-top: 0.9rem;
+  color: var(--text-color);
+  font-size: var(--h3-font);
+}
 
-    .box p{
-        color:var(--secondary-color);
-        margin-top:20px;
-        line: height 1.8em;
-    }
-    .box:hover{
+.box p {
+  color: var(--secondary-color);
+  margin-top: 20px;
+  line: height 1.8em;
+}
+.box:hover {
+  border-top: 5px solid var(--primary-color);
+  transition: all 0.4s ease-in;
+}
 
-        border-top: 5px solid var(--primary-color);
-        transition: all 0.40s ease-in;
-        
+.box:hover h3 {
+  color: var(--primary-color);
+  text-align: left;
+}
 
-    }
+.portfolio-content {
+  display: grid;
+  grid-template-columns: repeat(3, 2fr);
+  align-items: center;
+  text-align: center;
+  gap: 1.5rem;
+  margin-top: 3rem;
+}
 
-    .box:hover h3{
-        color:var(--primary-color);
-    }
+.portfolio-box {
+  display: grid;
+  grid-template-columns: repeat(1, 1, 2fr, 1);
+  background: #12141c;
+  padding: 15px;
+  border-top: 5px solid transparent;
+  border-radius: 0.8rem;
+  text-align: left;
+}
+
+.portfolio-box img {
+  width: 100%;
+  height: auto;
+  border-radius: 1rem;
+  margin-bottom: 1rem;
+}
+
+.portfolio-box h6 {
+  color: var(--primary-color);
+  text-align: left;
+  font-size: var(--h6-font);
+}
+
+.portofolio-box h3 {
+  text-align: left;
+  color: var(--text-color);
+  font-size: var(--h3-font);
+}
+
+.portfolio-box-text {
+  padding-top: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 1rem;
+}
+
+.portfolio-box:hover {
+  border-top: solid var(--primary-color);
+}
+
+.fas-fa-heart:active {
+  outline-color: var(--primary-color);
+}
+.contact {
+  display: grid;
+  grid-template-columns: repeat(2, 2fr);
+  align-items: top;
+  width: 100%;
+  text-align: left;
+  gap: 1.5rem;
+  margin-top: 5rem;
+}
+
+.contact-text h2 {
+  font-size: var(--h2-font);
+  color: var(--text-color);
+  margin-bottom: 2rem;
+}
+
+.contact-text h4 {
+  color: var(--primary-color);
+  margin-bottom: 4rem;
+  font-size: var(--h4-font);
+}
+
+.contact-text a {
+  display: block;
+  color: var(--secondary-color);
+  font-style: var(--a-font);
+  padding-top: 0.6rem;
+}
+
+.contact-data {
+  padding-top: 3rem;
+}
+.contact-form {
+  width: 100%;
+  display: block;
+}
+
+.contact-icons {
+    display: flex;
+    justify-content:left;
+    padding-top: 2rem;
+    color: var(--primary-color);
+    gap: 1rem;
+}
+
+.contact-icons a {
+border-radius: 5px;
+background-color: var(--box-color);
+color: var(--primary-color);
+padding: 1rem;
+gap: 2px;
+
+
+}
+
+.contact-icons a:hover{
+    box-shadow: 2px 2px 5px white;
+    cursor: pointer;
+
+}
+
+.contact-form input, form textarea {
+  width: 100%;
+  padding: 15px;
+  display: grid;
+  grid-template-columns: repeat(1, 4fr);
+  margin: 1rem;
+  background-color: var(--box-color);
+  border-radius: 0.8rem;
+  border: none;
+  font-size: var(--h5-font);
+  color: var(--text-color);
+}
+
+.contact-form form input:not([type="text"], [type="email"]) {
+  background-color: var(--primary-color);
+  width: 30%;
+}
+
+.contact-form textarea ([type=text]) {
+    padding: 40px;
+    
+
+}
