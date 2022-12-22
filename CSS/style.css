@@ -14,7 +14,7 @@
   --h1-font: 5rem;
   --h2-font: 3rem;
   --h3-font: 2.5rem;
-  --h4-font: 1.5rem;
+  --h4-font: 1.8rem;
   --p-font: 0.8rem;
   --a-font: 2rem;
   --h5-font: 1.2rem;
@@ -28,7 +28,7 @@ body {
 }
 
 header {
-  position: fixed;
+  /*position: fixed;*/
   right: 0;
   top: 0;
   width: 100%;
@@ -126,7 +126,7 @@ header.sticky {
 
 .about {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: repeat(auto-fit, minmax(300px,auto));
   /* 2 sutün 1 fr %50 , %50 gibi kullanılıyor------3 sutün 1fr, 33.33 %33.33 
         2fr 4fr gibi bir tanımlama sunduydsak bunun bize çıktısı 20% /2 birim)  40% 4 birim */
   align-items: center;
@@ -166,7 +166,7 @@ header.sticky {
 .about-img {
   width: 100%;
   height: auto;
-  max-width: 450px;
+  max-width:400;
 }
 
 .main-text {
@@ -186,7 +186,8 @@ header.sticky {
 
 .services-content {
   display: grid;
-  grid-template-columns: repeat(3, 1FR);
+  /*grid-template-columns: repeat(3, 1FR);*/
+  grid-template-columns: repeat(auto-fit, minmax(300px, auto));
   align-items: center;
   text-align: center;
   gap: 1.5rem;
@@ -225,6 +226,9 @@ header.sticky {
   color: var(--primary-color);
   text-align: left;
 }
+
+
+
 
 .portfolio-content {
   display: grid;
@@ -363,3 +367,40 @@ gap: 2px;
     
 
 }
+
+@media (min-width:320px) and (max-width: 425px){
+  :root{
+    --h1-font:2rem;
+    --h3-font:1rem;
+    --p-font:0.5rem;
+    --h5-font:0.8rem;
+  
+
+  }
+}
+
+  @media (min-width:425px) and (max-width 768px){
+    .navbar a{
+      display: block;
+      margin:1rem;
+      padding:1rem;
+    }
+
+    :root{
+      --h1-font:2.3rem;
+      --h3-font:1.2rem;
+      --h5-font:1.2rem;
+  }
+  }
+
+  section{
+    padding:100px 15% 90px;
+
+  }
+
+  @media (min-width:768px) and (max-width:1440){
+    section{
+      padding:120px 15% 90px;
+  
+    }
+  }
